@@ -32,4 +32,11 @@ class Util {
             return false
         }
     }
+    
+    // ナビゲーションの戻るボタンを設定する
+    class func setNaviBack(viewController: UIViewController, title: String = "") {
+        let backButton = UIBarButtonItem()
+        backButton.title = title
+        viewController.navigationItem.backBarButtonItem = backButton
+    }
 }
